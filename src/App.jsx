@@ -1,4 +1,5 @@
-import { createRoot } from "react-dom";
+// eslint-disable-next-line import/no-unresolved
+import { createRoot } from "react-dom/client";
 import SearchParams from "./SearchParams";
 const App = () => {
   return (
