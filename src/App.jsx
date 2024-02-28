@@ -7,8 +7,10 @@ import Details from "./Details";
 
 const queryClient = new QueryClient({
   defaultOptions: {
-    staleTime: 2 * 60 * 1000, // time data is "fresh", i.e. will definitely be cached
-    cacheTime: 10 * 60 * 1000, // time until the "stale" data is garbage collected
+    queries: {
+      staleTime: 2 * 60 * 1000, // time data is "fresh", i.e. will definitely be cached
+      cacheTime: 10 * 60 * 1000, // time until the "stale" data is garbage collected
+    },
   },
 });
 
